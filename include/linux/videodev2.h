@@ -19,6 +19,7 @@
 #ifndef __LINUX_VIDEODEV2_H
 #define __LINUX_VIDEODEV2_H
 #include <sys/time.h>
+#include <linux/compiler.h>
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #include <linux/ioctl.h>
 #include <linux/types.h>
@@ -496,17 +497,17 @@ struct v4l2_framebuffer {
 struct v4l2_clip {
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  struct v4l2_rect c;
- struct v4l2_clip *next;
+ struct v4l2_clip __user *next;
 };
 struct v4l2_window {
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  struct v4l2_rect w;
  enum v4l2_field field;
  __u32 chromakey;
- struct v4l2_clip *clips;
+ struct v4l2_clip __user *clips;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  __u32 clipcount;
- void *bitmap;
+ void __user *bitmap;
  __u8 global_alpha;
 };
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
@@ -1326,6 +1327,11 @@ enum v4l2_mpeg_cx2341x_video_median_filter_type {
 #define V4L2_CID_MPEG_QCOM_BASE (V4L2_CTRL_CLASS_MPEG | 0x2100)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #define V4L2_CID_MPEG_QCOM_SET_PERF_LEVEL (V4L2_CID_MPEG_QCOM_BASE + 0)
+enum v3l2_mpeg_qcom_perf_level {
+ V4L2_CID_MPEG_QCOM_PERF_LEVEL_PERFORMANCE = 0,
+ V4L2_CID_MPEG_QCOM_PERF_LEVEL_TURBO = 1,
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+};
 #define V4L2_CID_MPEG_MFC51_VIDEO_DECODER_H264_DISPLAY_DELAY (V4L2_CID_MPEG_MFC51_BASE+0)
 #define V4L2_CID_MPEG_MFC51_VIDEO_DECODER_H264_DISPLAY_DELAY_ENABLE (V4L2_CID_MPEG_MFC51_BASE+1)
 #define V4L2_CID_MPEG_MFC51_VIDEO_FRAME_SKIP_MODE (V4L2_CID_MPEG_MFC51_BASE+2)

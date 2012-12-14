@@ -133,10 +133,10 @@
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #define VEN_DB_SKIP_SLICE_BNDRY 3 
 #define VEN_MSLICE_OFF 1
-#define VEN_MSLICE_CNT_MB 2  
-#define VEN_MSLICE_CNT_BYTE 3  
+#define VEN_MSLICE_CNT_MB 2 
+#define VEN_MSLICE_CNT_BYTE 3 
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_MSLICE_GOB 4  
+#define VEN_MSLICE_GOB 4 
 #define VEN_RC_OFF 1
 #define VEN_RC_VBR_VFR 2
 #define VEN_RC_VBR_CFR 3
@@ -168,262 +168,263 @@ struct venc_ioctl_msg{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  void __user *out;
 };
-#define VEN_IOCTL_SET_INTF_VERSION   _IOW(VEN_IOCTLBASE_NENC, 0, struct venc_ioctl_msg)
-#define VEN_IOCTL_CMD_READ_NEXT_MSG   _IOWR(VEN_IOCTLBASE_NENC, 1, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_INTF_VERSION _IOW(VEN_IOCTLBASE_NENC, 0, struct venc_ioctl_msg)
+#define VEN_IOCTL_CMD_READ_NEXT_MSG _IOWR(VEN_IOCTLBASE_NENC, 1, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #define VEN_IOCTL_CMD_STOP_READ_MSG _IO(VEN_IOCTLBASE_NENC, 2)
-#define VEN_IOCTL_SET_INPUT_BUFFER_REQ   _IOW(VEN_IOCTLBASE_NENC, 3, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_INPUT_BUFFER_REQ   _IOR(VEN_IOCTLBASE_NENC, 4, struct venc_ioctl_msg)
-#define VEN_IOCTL_CMD_ALLOC_INPUT_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 5, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_INPUT_BUFFER_REQ _IOW(VEN_IOCTLBASE_NENC, 3, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_INPUT_BUFFER_REQ _IOR(VEN_IOCTLBASE_NENC, 4, struct venc_ioctl_msg)
+#define VEN_IOCTL_CMD_ALLOC_INPUT_BUFFER _IOW(VEN_IOCTLBASE_NENC, 5, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_INPUT_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 6, struct venc_ioctl_msg)
-#define VEN_IOCTL_CMD_FREE_INPUT_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 7, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_OUTPUT_BUFFER_REQ   _IOW(VEN_IOCTLBASE_NENC, 8, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_OUTPUT_BUFFER_REQ   _IOR(VEN_IOCTLBASE_NENC, 9, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_INPUT_BUFFER _IOW(VEN_IOCTLBASE_NENC, 6, struct venc_ioctl_msg)
+#define VEN_IOCTL_CMD_FREE_INPUT_BUFFER _IOW(VEN_IOCTLBASE_NENC, 7, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_OUTPUT_BUFFER_REQ _IOW(VEN_IOCTLBASE_NENC, 8, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_OUTPUT_BUFFER_REQ _IOR(VEN_IOCTLBASE_NENC, 9, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_CMD_ALLOC_OUTPUT_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 10, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_OUTPUT_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 11, struct venc_ioctl_msg)
-#define VEN_IOCTL_CMD_FREE_OUTPUT_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 12, struct venc_ioctl_msg)
+#define VEN_IOCTL_CMD_ALLOC_OUTPUT_BUFFER _IOW(VEN_IOCTLBASE_NENC, 10, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_OUTPUT_BUFFER _IOW(VEN_IOCTLBASE_NENC, 11, struct venc_ioctl_msg)
+#define VEN_IOCTL_CMD_FREE_OUTPUT_BUFFER _IOW(VEN_IOCTLBASE_NENC, 12, struct venc_ioctl_msg)
 #define VEN_IOCTL_CMD_START _IO(VEN_IOCTLBASE_NENC, 13)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_CMD_ENCODE_FRAME   _IOW(VEN_IOCTLBASE_NENC, 14, struct venc_ioctl_msg)
-#define VEN_IOCTL_CMD_FILL_OUTPUT_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 15, struct venc_ioctl_msg)
-#define VEN_IOCTL_CMD_FLUSH   _IOW(VEN_IOCTLBASE_NENC, 16, struct venc_ioctl_msg)
+#define VEN_IOCTL_CMD_ENCODE_FRAME _IOW(VEN_IOCTLBASE_NENC, 14, struct venc_ioctl_msg)
+#define VEN_IOCTL_CMD_FILL_OUTPUT_BUFFER _IOW(VEN_IOCTLBASE_NENC, 15, struct venc_ioctl_msg)
+#define VEN_IOCTL_CMD_FLUSH _IOW(VEN_IOCTLBASE_NENC, 16, struct venc_ioctl_msg)
 #define VEN_IOCTL_CMD_PAUSE _IO(VEN_IOCTLBASE_NENC, 17)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #define VEN_IOCTL_CMD_RESUME _IO(VEN_IOCTLBASE_NENC, 18)
 #define VEN_IOCTL_CMD_STOP _IO(VEN_IOCTLBASE_NENC, 19)
-#define VEN_IOCTL_SET_RECON_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 20, struct venc_ioctl_msg)
-#define VEN_IOCTL_FREE_RECON_BUFFER   _IOW(VEN_IOCTLBASE_NENC, 21, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_RECON_BUFFER _IOW(VEN_IOCTLBASE_NENC, 20, struct venc_ioctl_msg)
+#define VEN_IOCTL_FREE_RECON_BUFFER _IOW(VEN_IOCTLBASE_NENC, 21, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_GET_RECON_BUFFER_SIZE   _IOW(VEN_IOCTLBASE_NENC, 22, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_BASE_CFG   _IOW(VEN_IOCTLBASE_ENC, 1, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_BASE_CFG   _IOR(VEN_IOCTLBASE_ENC, 2, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_LIVE_MODE   _IOW(VEN_IOCTLBASE_ENC, 3, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_RECON_BUFFER_SIZE _IOW(VEN_IOCTLBASE_NENC, 22, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_BASE_CFG _IOW(VEN_IOCTLBASE_ENC, 1, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_BASE_CFG _IOR(VEN_IOCTLBASE_ENC, 2, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_LIVE_MODE _IOW(VEN_IOCTLBASE_ENC, 3, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_GET_LIVE_MODE   _IOR(VEN_IOCTLBASE_ENC, 4, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_CODEC_PROFILE   _IOW(VEN_IOCTLBASE_ENC, 5, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_CODEC_PROFILE   _IOR(VEN_IOCTLBASE_ENC, 6, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_PROFILE_LEVEL   _IOW(VEN_IOCTLBASE_ENC, 7, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_LIVE_MODE _IOR(VEN_IOCTLBASE_ENC, 4, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_CODEC_PROFILE _IOW(VEN_IOCTLBASE_ENC, 5, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_CODEC_PROFILE _IOR(VEN_IOCTLBASE_ENC, 6, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_PROFILE_LEVEL _IOW(VEN_IOCTLBASE_ENC, 7, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_GET_PROFILE_LEVEL   _IOR(VEN_IOCTLBASE_ENC, 8, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_SHORT_HDR   _IOW(VEN_IOCTLBASE_ENC, 9, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_SHORT_HDR   _IOR(VEN_IOCTLBASE_ENC, 10, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_SESSION_QP   _IOW(VEN_IOCTLBASE_ENC, 11, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_PROFILE_LEVEL _IOR(VEN_IOCTLBASE_ENC, 8, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_SHORT_HDR _IOW(VEN_IOCTLBASE_ENC, 9, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_SHORT_HDR _IOR(VEN_IOCTLBASE_ENC, 10, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_SESSION_QP _IOW(VEN_IOCTLBASE_ENC, 11, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_GET_SESSION_QP   _IOR(VEN_IOCTLBASE_ENC, 12, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_INTRA_PERIOD   _IOW(VEN_IOCTLBASE_ENC, 13, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_INTRA_PERIOD   _IOR(VEN_IOCTLBASE_ENC, 14, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_SESSION_QP _IOR(VEN_IOCTLBASE_ENC, 12, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_INTRA_PERIOD _IOW(VEN_IOCTLBASE_ENC, 13, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_INTRA_PERIOD _IOR(VEN_IOCTLBASE_ENC, 14, struct venc_ioctl_msg)
 #define VEN_IOCTL_CMD_REQUEST_IFRAME _IO(VEN_IOCTLBASE_ENC, 15)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_GET_CAPABILITY   _IOR(VEN_IOCTLBASE_ENC, 16, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_SEQUENCE_HDR   _IOR(VEN_IOCTLBASE_ENC, 17, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_ENTROPY_CFG   _IOW(VEN_IOCTLBASE_ENC, 18, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_ENTROPY_CFG   _IOR(VEN_IOCTLBASE_ENC, 19, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_CAPABILITY _IOR(VEN_IOCTLBASE_ENC, 16, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_SEQUENCE_HDR _IOR(VEN_IOCTLBASE_ENC, 17, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_ENTROPY_CFG _IOW(VEN_IOCTLBASE_ENC, 18, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_ENTROPY_CFG _IOR(VEN_IOCTLBASE_ENC, 19, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_DEBLOCKING_CFG   _IOW(VEN_IOCTLBASE_ENC, 20, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_DEBLOCKING_CFG   _IOR(VEN_IOCTLBASE_ENC, 21, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_INTRA_REFRESH   _IOW(VEN_IOCTLBASE_ENC, 22, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_INTRA_REFRESH   _IOR(VEN_IOCTLBASE_ENC, 23, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_DEBLOCKING_CFG _IOW(VEN_IOCTLBASE_ENC, 20, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_DEBLOCKING_CFG _IOR(VEN_IOCTLBASE_ENC, 21, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_INTRA_REFRESH _IOW(VEN_IOCTLBASE_ENC, 22, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_INTRA_REFRESH _IOR(VEN_IOCTLBASE_ENC, 23, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_MULTI_SLICE_CFG   _IOW(VEN_IOCTLBASE_ENC, 24, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_MULTI_SLICE_CFG   _IOR(VEN_IOCTLBASE_ENC, 25, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_RATE_CTRL_CFG   _IOW(VEN_IOCTLBASE_ENC, 26, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_RATE_CTRL_CFG   _IOR(VEN_IOCTLBASE_ENC, 27, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_MULTI_SLICE_CFG _IOW(VEN_IOCTLBASE_ENC, 24, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_MULTI_SLICE_CFG _IOR(VEN_IOCTLBASE_ENC, 25, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_RATE_CTRL_CFG _IOW(VEN_IOCTLBASE_ENC, 26, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_RATE_CTRL_CFG _IOR(VEN_IOCTLBASE_ENC, 27, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_VOP_TIMING_CFG   _IOW(VEN_IOCTLBASE_ENC, 28, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_VOP_TIMING_CFG   _IOR(VEN_IOCTLBASE_ENC, 29, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_FRAME_RATE   _IOW(VEN_IOCTLBASE_ENC, 30, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_FRAME_RATE   _IOR(VEN_IOCTLBASE_ENC, 31, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_VOP_TIMING_CFG _IOW(VEN_IOCTLBASE_ENC, 28, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_VOP_TIMING_CFG _IOR(VEN_IOCTLBASE_ENC, 29, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_FRAME_RATE _IOW(VEN_IOCTLBASE_ENC, 30, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_FRAME_RATE _IOR(VEN_IOCTLBASE_ENC, 31, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_TARGET_BITRATE   _IOW(VEN_IOCTLBASE_ENC, 32, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_TARGET_BITRATE   _IOR(VEN_IOCTLBASE_ENC, 33, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_ROTATION   _IOW(VEN_IOCTLBASE_ENC, 34, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_ROTATION   _IOR(VEN_IOCTLBASE_ENC, 35, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_TARGET_BITRATE _IOW(VEN_IOCTLBASE_ENC, 32, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_TARGET_BITRATE _IOR(VEN_IOCTLBASE_ENC, 33, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_ROTATION _IOW(VEN_IOCTLBASE_ENC, 34, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_ROTATION _IOR(VEN_IOCTLBASE_ENC, 35, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_HEC   _IOW(VEN_IOCTLBASE_ENC, 36, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_HEC   _IOR(VEN_IOCTLBASE_ENC, 37, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_DATA_PARTITION   _IOW(VEN_IOCTLBASE_ENC, 38, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_DATA_PARTITION   _IOR(VEN_IOCTLBASE_ENC, 39, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_HEC _IOW(VEN_IOCTLBASE_ENC, 36, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_HEC _IOR(VEN_IOCTLBASE_ENC, 37, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_DATA_PARTITION _IOW(VEN_IOCTLBASE_ENC, 38, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_DATA_PARTITION _IOR(VEN_IOCTLBASE_ENC, 39, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_RVLC   _IOW(VEN_IOCTLBASE_ENC, 40, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_RVLC   _IOR(VEN_IOCTLBASE_ENC, 41, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_AC_PREDICTION   _IOW(VEN_IOCTLBASE_ENC, 42, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_AC_PREDICTION   _IOR(VEN_IOCTLBASE_ENC, 43, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_RVLC _IOW(VEN_IOCTLBASE_ENC, 40, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_RVLC _IOR(VEN_IOCTLBASE_ENC, 41, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_AC_PREDICTION _IOW(VEN_IOCTLBASE_ENC, 42, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_AC_PREDICTION _IOR(VEN_IOCTLBASE_ENC, 43, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_QP_RANGE   _IOW(VEN_IOCTLBASE_ENC, 44, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_QP_RANGE   _IOR(VEN_IOCTLBASE_ENC, 45, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_NUMBER_INSTANCES   _IOR(VEN_IOCTLBASE_ENC, 46, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_METABUFFER_MODE   _IOW(VEN_IOCTLBASE_ENC, 47, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_QP_RANGE _IOW(VEN_IOCTLBASE_ENC, 44, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_QP_RANGE _IOR(VEN_IOCTLBASE_ENC, 45, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_NUMBER_INSTANCES _IOR(VEN_IOCTLBASE_ENC, 46, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_METABUFFER_MODE _IOW(VEN_IOCTLBASE_ENC, 47, struct venc_ioctl_msg)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#define VEN_IOCTL_SET_EXTRADATA   _IOW(VEN_IOCTLBASE_ENC, 48, struct venc_ioctl_msg)
-#define VEN_IOCTL_GET_EXTRADATA   _IOR(VEN_IOCTLBASE_ENC, 49, struct venc_ioctl_msg)
-#define VEN_IOCTL_SET_SLICE_DELIVERY_MODE   _IO(VEN_IOCTLBASE_ENC, 50)
+#define VEN_IOCTL_SET_EXTRADATA _IOW(VEN_IOCTLBASE_ENC, 48, struct venc_ioctl_msg)
+#define VEN_IOCTL_GET_EXTRADATA _IOR(VEN_IOCTLBASE_ENC, 49, struct venc_ioctl_msg)
+#define VEN_IOCTL_SET_SLICE_DELIVERY_MODE _IO(VEN_IOCTLBASE_ENC, 50)
+#define VEN_IOCTL_SET_SPS_PPS_FOR_IDR _IOW(VEN_IOCTLBASE_ENC, 51, struct venc_ioctl_msg)
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 struct venc_switch{
-/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  unsigned char status;
 };
 struct venc_allocatorproperty{
- unsigned long mincount;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long mincount;
  unsigned long maxcount;
  unsigned long actualcount;
  unsigned long datasize;
- unsigned long suffixsize;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long suffixsize;
  unsigned long alignment;
  unsigned long bufpoolid;
 };
-struct venc_bufferpayload{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct venc_bufferpayload{
  unsigned char *pbuffer;
  size_t sz;
  int fd;
- unsigned int offset;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned int offset;
  unsigned int maped_size;
  unsigned long filled_len;
 };
-struct venc_buffer{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct venc_buffer{
  unsigned char *ptrbuffer;
  unsigned long sz;
  unsigned long len;
- unsigned long offset;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long offset;
  long long timestamp;
  unsigned long flags;
  void *clientdata;
-};
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+};
 struct venc_basecfg{
  unsigned long input_width;
  unsigned long input_height;
- unsigned long dvs_width;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long dvs_width;
  unsigned long dvs_height;
  unsigned long codectype;
  unsigned long fps_num;
- unsigned long fps_den;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long fps_den;
  unsigned long targetbitrate;
  unsigned long inputformat;
 };
-struct venc_profile{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct venc_profile{
  unsigned long profile;
 };
 struct ven_profilelevel{
- unsigned long level;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long level;
 };
 struct venc_sessionqp{
  unsigned long iframeqp;
- unsigned long pframqp;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long pframqp;
 };
 struct venc_qprange{
  unsigned long maxqp;
- unsigned long minqp;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long minqp;
 };
 struct venc_intraperiod{
  unsigned long num_pframes;
- unsigned long num_bframes;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long num_bframes;
 };
 struct venc_seqheader{
  unsigned char *hdrbufptr;
- unsigned long bufsize;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long bufsize;
  unsigned long hdrlen;
 };
 struct venc_capability{
- unsigned long codec_types;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long codec_types;
  unsigned long maxframe_width;
  unsigned long maxframe_height;
  unsigned long maxtarget_bitrate;
- unsigned long maxframe_rate;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long maxframe_rate;
  unsigned long input_formats;
  unsigned char dvs;
 };
-struct venc_entropycfg{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct venc_entropycfg{
  unsigned longentropysel;
  unsigned long cabacmodel;
 };
-struct venc_dbcfg{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct venc_dbcfg{
  unsigned long db_mode;
  unsigned long slicealpha_offset;
  unsigned long slicebeta_offset;
-};
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+};
 struct venc_intrarefresh{
  unsigned long irmode;
  unsigned long mbcount;
-};
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+};
 struct venc_multiclicecfg{
  unsigned long mslice_mode;
  unsigned long mslice_size;
-};
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+};
 struct venc_bufferflush{
  unsigned long flush_mode;
 };
-struct venc_ratectrlcfg{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct venc_ratectrlcfg{
  unsigned long rcmode;
 };
 struct venc_voptimingcfg{
- unsigned long voptime_resolution;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long voptime_resolution;
 };
 struct venc_framerate{
  unsigned long fps_denominator;
- unsigned long fps_numerator;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long fps_numerator;
 };
 struct venc_targetbitrate{
  unsigned long target_bitrate;
-};
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+};
 struct venc_rotation{
  unsigned long rotation;
 };
-struct venc_timeout{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct venc_timeout{
  unsigned long millisec;
 };
 struct venc_headerextension{
- unsigned long header_extension;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long header_extension;
 };
 struct venc_msg{
  unsigned long statuscode;
- unsigned long msgcode;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long msgcode;
  struct venc_buffer buf;
  unsigned long msgdata_size;
 };
-struct venc_recon_addr{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+struct venc_recon_addr{
  unsigned char *pbuffer;
  unsigned long buffer_size;
  unsigned long pmem_fd;
- unsigned long offset;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long offset;
 };
 struct venc_recon_buff_size{
  int width;
- int height;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ int height;
  int size;
  int alignment;
 };
-#endif
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+#endif
 
