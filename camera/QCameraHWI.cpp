@@ -1167,11 +1167,11 @@ void QCameraHardwareInterface::stopPreviewInternal()
         return;
     }
 
+    mStreamDisplay->stop();
     if(isZSLMode() && !mZslFlashEnable) {
         /* take care snapshot object for ZSL mode */
         mStreamSnap->stop();
     }
-    mStreamDisplay->stop();
 
     mCameraState = CAMERA_STATE_PREVIEW_STOP_CMD_SENT;
     ALOGI("stopPreviewInternal: X");
@@ -1521,9 +1521,8 @@ void liveshot_callback(mm_camera_ch_data_buf_t *recvd_frame,
 void QCameraHardwareInterface::changeMode(camera_mode_t mode) {
     if(myMode==mode)
         return;
-    mPreviewState = QCAMERA_HAL_PREVIEW_STOPPED;
-    mStreamSnap->stop();
     stopPreviewInternal();
+    mPreviewState = QCAMERA_HAL_PREVIEW_STOPPED;
     QCameraStream_Snapshot::deleteInstance (mStreamSnap);
     mStreamSnap = NULL;
     setMyMode(mode); //CAMERA_SUPPORT_MODE_NONZSL | CAMERA_SUPPORT_MODE_2D);
@@ -1563,10 +1562,8 @@ status_t  QCameraHardwareInterface::takePicture()
             }
             if(!mZslFlashEnable)
                 return ret;
-            mZslFlashEnable=0;
             // stop preview, delete the snapshot object and recreate it in Non-ZSL mode
             changeMode((camera_mode_t)(CAMERA_SUPPORT_MODE_NONZSL | CAMERA_SUPPORT_MODE_2D));
-            mZslFlashEnable=1;
         }
 
         /*prepare snapshot, e.g LED*/
@@ -2325,8 +2322,7 @@ int QCameraHardwareInterface::initHeapMem( QCameraHalHeap_t *heap,
 
     for(i = 0; i < num_of_buf; i++) {
 #ifdef USE_ION
-        // allocate from the iommu heap
-        rc = allocate_ion_memory(heap, i, 0);
+        rc = allocate_ion_memory(heap, i, ION_CP_MM_HEAP_ID);
         if (rc < 0) {
             ALOGE("%sION allocation failed\n", __func__);
             break;
